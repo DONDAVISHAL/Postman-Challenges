@@ -14,8 +14,8 @@ pm.test("Status code is 200", function () {
  pm.response.to.have.status(200);
 });
 
-pm.test("Status code is 200", function () {
- pm.response.to.have.status(404);
+pm.test("Expected a 404", function () {
+ pm.response.to.have.status(200);
 });
 ```
 
